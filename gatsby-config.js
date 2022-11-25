@@ -19,22 +19,22 @@ module.exports = {
     "gatsby-plugin-mdx",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "markdowns",
-        path: `${__dirname}/src/markdowns`,
-      },
-      __key: "markdowns",
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `assets`,
-        path: `${__dirname}/src/assets`,
-      },
-      __key: "assets",
-    },
+    // {
+    //   resolve: "gatsby-source-filesystem",
+    //   options: {
+    //     name: "markdowns",
+    //     path: `${__dirname}/src/markdowns`,
+    //   },
+    //   __key: "markdowns",
+    // },
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     name: `assets`,
+    //     path: `${__dirname}/src/assets`,
+    //   },
+    //   __key: "assets",
+    // },
     {
       resolve: "gatsby-source-filesystem",
       options: {
