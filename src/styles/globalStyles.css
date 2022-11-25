@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #fef6e4;
+    --headline: #001858;
+    --paragraph: #172c66;
+    --button-color: #001858;
+    --button-background: #f582ae;
+    --stroke: #001858;
+    --main: #f3d2c1;
+    --secondary: #8bd3dd;
+    --tertiary: #f582ae;
+    --hightlight: #fef6e4;
+  }
+}
+
+@layer components {
+  .nav-item {
+    @apply p-2 mb-2 cursor-default w-full text-foreground rounded hover:bg-primary font-bold  hover:stroke-2 hover:stroke-stroke;
+  }
+
+  h1 {
+    @apply font-bold text-2xl
+  }
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background);
+}

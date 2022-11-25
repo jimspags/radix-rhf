@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@mdx-js/react": "^2.1.5",
+    "@radix-ui/react-scroll-area": "^1.0.2",
     "gatsby": "^5.0.0",
     "gatsby-plugin-image": "^3.1.0",
     "gatsby-plugin-manifest": "^5.1.0",
