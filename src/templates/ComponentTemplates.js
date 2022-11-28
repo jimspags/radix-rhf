@@ -2,20 +2,21 @@ import React from "react";
 import Layout from "../components/Layout";
 import { graphql } from "gatsby";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
-import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader";
-deckDeckGoHighlightElement();
 
 const ComponentTemplates = ({ pageContext, data }) => {
   const { frontmatter } = data.markdownRemark;
+  console.log(pageContext);
   console.log(frontmatter);
   return (
     <Layout>
       {frontmatter.steps?.map((step, index) => (
         <div key={index}>
           <p>{step.description}</p>
-          <pre className="language-css">
-            <code className="token superscript_keywords line-numbers-rows" >{step.code.code}</code>
-          </pre>
+          <div className="gatsby-highlight">
+            <pre>
+              <code className={`language-${step.code.lang}`}>{step.code.code}</code>
+            </pre>
+          </div>
         </div>
       ))}
     </Layout>
@@ -34,6 +35,7 @@ export const query = graphql`
           description
           code {
             code
+            lang
           }
         }
       }

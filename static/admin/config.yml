@@ -31,6 +31,6 @@ collections:
             [
               { label: description, name: description, widget: text },
               { label: Code, name: code, widget: code },
-              { label: Note, name: note, widget: text, required: false },
+              { label: Note, name: note, widget: text, required: false, output_code_only: true },
             ],
         }
