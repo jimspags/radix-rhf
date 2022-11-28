@@ -11,7 +11,7 @@ collections:
     label: "Component"
     folder: "src/markdowns/components"
     create: true
-    slug: "identifier"
+    slug: "{{identifier}}"
     editor:
       preview: false
     fields:
