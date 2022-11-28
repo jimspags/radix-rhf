@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: main
 
-local_backend: false
+local_backend: true
 media_folder: src/assets
 public_folder: ../../assets/
 
@@ -31,6 +31,6 @@ collections:
             [
               { label: description, name: description, widget: text },
               { label: Body, name: body, widget: markdown },
-              { label: Note, name: note, widget: text },
+              { label: Note, name: note, widget: text, required: false },
             ],
         }
