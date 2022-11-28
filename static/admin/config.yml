@@ -2,18 +2,18 @@ backend:
   name: git-gateway
   branch: main
 
-local_backend: true
+local_backend: false
 media_folder: src/assets
 public_folder: ../../assets/
 
 collections:
-  - name: "news"
-    label: "News"
-    folder: "src/markdowns/jfeem-news"
+  - name: "component"
+    label: "Component"
+    folder: "src/markdowns/components"
     create: true
     slug: "identifier"
     editor:
-      preview: true
+      preview: false
     fields:
       - {
           label: "Template Key",
@@ -21,14 +21,8 @@ collections:
           widget: "hidden",
           default: "news",
         }
-      - {
-          label: "Include in recent news?",
-          name: "recent",
-          widget: "boolean",
-          default: true,
-          required: false,
-        }
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Identifier", name: "identifier", widget: "string" }
       - {
           label: "Description",
           name: "description",
