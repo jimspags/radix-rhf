@@ -19,7 +19,7 @@
 
 @layer components {
   .nav-item {
-    @apply p-2 mb-2 cursor-default w-full text-foreground rounded hover:bg-primary font-bold  hover:stroke-2 hover:stroke-stroke;
+    @apply p-2 mb-2 w-full text-foreground rounded hover:bg-primary font-bold  hover:stroke-2 hover:stroke-stroke cursor-pointer;
   }
 
   h1 {

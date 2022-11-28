@@ -36,6 +36,7 @@ const Sidebar = () => {
             if (!node.frontmatter.title) return;
             return (
               <Link
+                activeClassName="bg-primary"
                 className="Tag nav-item"
                 to={`/components/${node.frontmatter.identifier}`}
                 key={node.frontmatter.identifier}
