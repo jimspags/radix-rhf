@@ -19,7 +19,7 @@ collections:
           label: "Template Key",
           name: "templateKey",
           widget: "hidden",
-          default: "news",
+          default: "components",
         }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Path", name: "path", widget: "string" }
