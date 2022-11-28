@@ -5,7 +5,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <section className="test">
-        <h1 className>Input Field</h1>
+        <h1 className="text-foreground">Input Field</h1>
       </section>
     </Layout>
   );

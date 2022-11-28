@@ -12,7 +12,7 @@ exports.createPages = ({ actions, graphql }) => {
         nodes {
           id
           frontmatter {
-            identifier
+            path
           }
         }
       }
@@ -25,7 +25,7 @@ exports.createPages = ({ actions, graphql }) => {
 
     result.data.components.nodes.forEach((node) => {
       createPage({
-        path: `/components/${node.frontmatter.identifier}`,
+        path: `/components/${node.frontmatter.path}`,
         component: path.resolve(`src/templates/ComponentTemplates.js`),
         context: { id: node.id },
       });

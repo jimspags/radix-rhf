@@ -25,12 +25,12 @@ collections:
       - { label: "Path", name: "path", widget: "string" }
       - {
           label: Steps,
-          name: "step",
+          name: "steps",
           widget: "list",
           fields:
             [
               { label: description, name: description, widget: text },
-              { label: Body, name: body, widget: markdown },
+              { label: Body, name: body, widget: code },
               { label: Note, name: note, widget: text, required: false },
             ],
         }

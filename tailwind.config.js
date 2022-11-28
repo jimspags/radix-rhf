@@ -5,8 +5,8 @@ module.exports = {
   ],
   theme: {
     colors: {
-      primary: "var(--button-background)",
       foreground: "var(--paragraph)",
+      primary: "var(--button-background)",
       background: "var(--background)",
       secondary: "var(--secondary)",
       stroke: "var(--stroke)",
@@ -14,5 +14,8 @@ module.exports = {
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require("@tailwindcss/typography"),
+    // ...
+  ],
 };

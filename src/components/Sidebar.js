@@ -17,7 +17,7 @@ const Sidebar = () => {
         nodes {
           id
           frontmatter {
-            identifier
+            path
             title
           }
         }
@@ -25,7 +25,7 @@ const Sidebar = () => {
     }
   `);
   const { nodes } = data.components;
-  console.log(nodes);
+ 
   return (
     <ScrollArea.Root className="ScrollAreaRoot">
       <ScrollArea.Viewport className="ScrollAreaViewport">
@@ -38,8 +38,8 @@ const Sidebar = () => {
               <Link
                 activeClassName="bg-primary"
                 className="Tag nav-item"
-                to={`/components/${node.frontmatter.identifier}`}
-                key={node.frontmatter.identifier}
+                to={`/components/${node.frontmatter.path}`}
+                key={node.frontmatter.path}
               >
                 {node.frontmatter.title}
               </Link>
