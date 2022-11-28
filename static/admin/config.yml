@@ -7,99 +7,35 @@ media_folder: src/assets
 public_folder: ../../assets/
 
 collections:
-  - name: "pages"
-    label: "Pages"
-    description: >
-      Where you can edit pages in English content.
+  - name: "news"
+    label: "News"
+    folder: "src/markdowns/jfeem-news"
+    create: true
+    slug: "identifier"
     editor:
-      preview: false
-    files:
-      - file: "src/markdowns/careers/index.md"
-        name: "careers"
-        label: "Careers"
-        fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "careers",
-            }
-          - {
-              label: Header,
-              name: header,
-              widget: object,
-              fields: [{ label: Description, name: description, widget: text }],
-            }
-          - {
-              label: "Join Us",
-              name: joinUs,
-              widget: object,
-              fields:
-                [
-                  {
-                    label: "Hide this content on the website?",
-                    name: "hidden",
-                    widget: "boolean",
-                    default: false,
-                    required: false,
-                  },
-                  { label: Title, name: title, widget: string },
-                  {
-                    label: Professional,
-                    name: professional,
-                    widget: object,
-                    fields:
-                      [
-                        {
-                          label: "Hide this content on the website?",
-                          name: "hidden",
-                          widget: "boolean",
-                          default: false,
-                          required: false,
-                        },
-                        { label: Title, name: title, widget: string },
-                        { label: Description, name: description, widget: text },
-                        {
-                          label: "Image (735 x 550 pixels / 4:3 aspect ratio)",
-                          name: image,
-                          widget: image,
-                          choose_url: false,
-                        },
-                      ],
-                  },
-                  {
-                    label: "Fresh Graduate",
-                    name: freshGraduate,
-                    widget: object,
-                    fields:
-                      [
-                        {
-                          label: "Hide this content on the website?",
-                          name: "hidden",
-                          widget: "boolean",
-                          default: false,
-                          required: false,
-                        },
-                        { label: Title, name: title, widget: string },
-                        { label: Description, name: description, widget: text },
-                        {
-                          label: "Image (735 x 550 pixels / 4:3 aspect ratio)",
-                          name: image,
-                          widget: image,
-                          choose_url: false,
-                        },
-                      ],
-                  },
-                ],
-            }
-          - {
-              label: "Drop your resume background (1160 x 650 pixels / 16:9 aspect ratio)",
-              name: dropYourResumeBg,
-              widget: image,
-              choose_url: false,
-            }
-          - {
-              label: "Testimonials Heading",
-              name: testimonialsHeading,
-              widget: string,
-            }
+      preview: true
+    fields:
+      - {
+          label: "Template Key",
+          name: "templateKey",
+          widget: "hidden",
+          default: "news",
+        }
+      - {
+          label: "Include in recent news?",
+          name: "recent",
+          widget: "boolean",
+          default: true,
+          required: false,
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Description",
+          name: "description",
+          widget: "string",
+          required: false,
+        }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
+            
+              
