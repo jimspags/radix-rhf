@@ -13,10 +13,9 @@ const ComponentTemplates = ({ pageContext, data }) => {
       {frontmatter.steps?.map((step, index) => (
         <div key={index}>
           <p>{step.description}</p>
-
-          <code>
-            <pre>{step.code.code}</pre>
-          </code>
+          <pre className="language-css">
+            <code className="token superscript_keywords line-numbers-rows" >{step.code.code}</code>
+          </pre>
         </div>
       ))}
     </Layout>

@@ -4,7 +4,8 @@ path: input
 steps:
   - description: First step, install the input from radix-ui using npm.
     code:
-      code: npm install @radix-ui/react-label
+      code: >- 
+        npm install @radix-ui/react-label
   - description: Second step, create a reusable component in your components folder.
     code:
       code: >-
