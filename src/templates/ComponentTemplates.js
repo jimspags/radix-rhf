@@ -5,7 +5,6 @@ import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader";
 deckDeckGoHighlightElement();
 
-
 const ComponentTemplates = ({ pageContext, data }) => {
   const { frontmatter } = data.markdownRemark;
   console.log(frontmatter);
@@ -14,12 +13,10 @@ const ComponentTemplates = ({ pageContext, data }) => {
       {frontmatter.steps?.map((step, index) => (
         <div key={index}>
           <p>{step.description}</p>
-          <code>{step.body}</code>
-          <ReactMarkdown
-            className="bg-foreground rounded-[10px] !p-10"
-            children={step.body}
-            components={<code>{step.body}</code>}
-          />
+
+          <code>
+            <pre>{step.code.code}</pre>
+          </code>
         </div>
       ))}
     </Layout>
@@ -36,7 +33,9 @@ export const query = graphql`
         title
         steps {
           description
-          body
+          code {
+            code
+          }
         }
       }
     }

@@ -30,7 +30,7 @@ collections:
           fields:
             [
               { label: description, name: description, widget: text },
-              { label: Body, name: code, widget: code },
+              { label: Code, name: code, widget: code },
               { label: Note, name: note, widget: text, required: false },
             ],
         }
