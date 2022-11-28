@@ -1,6 +1,6 @@
 
 [build]
   publish = "public"
-  command = "gatsby build"
+  command = "npm run build"
 [build.environment]
-  NODE_VERSION = "18.0.0"
+  NODE_VERSION = "18.12.1"
