@@ -41,4 +41,5 @@ steps:
         })
 
         export default Input
+      lang: typescript
 ---
