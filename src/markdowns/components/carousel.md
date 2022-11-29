@@ -7,6 +7,8 @@ path: Carousel
 
 F﻿irst step, install the react slick carousel component using npm.
 
-```
-npm install react-slick --save
-```
+\`\``js
+
+S﻿ample
+
+\`﻿\``
