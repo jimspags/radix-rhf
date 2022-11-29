@@ -3,12 +3,10 @@ templateKey: components
 title: Carousel
 path: Carousel
 ---
-## I﻿nstallation
+## Installation
 
-F﻿irst step, install the react slick carousel component using npm.
+First step, install the react slick carousel component using npm.
 
-````
 ```js
-test
+const test = "test";
 ```
-````
