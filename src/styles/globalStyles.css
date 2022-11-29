@@ -40,6 +40,7 @@
 
 body {
   background-color: var(--background);
+  
 }
 
 code,
@@ -53,6 +54,7 @@ code > * {
 
 .gatsby-remark-prismjs-copy-button-container.copy-button {
    transform: translateY(75%) !important;
+ 
 }
 .gatsby-highlight {
   margin-top: 20px;
