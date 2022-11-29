@@ -10,9 +10,7 @@ npm install @radix-ui/react-select
 ```
 
 ## Create a reusable component
-
-To illustrate how the Open/Closed principle would be violated, consider this code:
-
+Create reuable components in your shared components folder "/components/shared".
 ```js
 import React from 'react';
 import * as Select from '@radix-ui/react-select';
@@ -69,6 +67,12 @@ export default SelectInput;
 
 ## Usage
 
+Import the select from shared/components folder 
+
+```js
+import SelectInput from '../../shared/components/Select/Select';
+```
+
 Using the `Controller` from react hook form allows you to modify the `onChange` function of the reusbale component.
 
 ```js
@@ -88,7 +92,6 @@ Using the `Controller` from react hook form allows you to modify the `onChange` 
     )}
     name="Flavor"
     control={control}
-
 />
 ```
 

@@ -49,6 +49,11 @@ export default Input
 
 ## Usage
 
+Import the input from shared/components folder.
+```js
+import Input from '../../shared/components/InputForm/Input';
+```
+
 Reuse the components with `{...register}` to get the value of the input.
  
 

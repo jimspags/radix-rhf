@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../components/Layout";
 import { graphql } from "gatsby";
+import { data } from "autoprefixer";
 
 const ComponentTemplates = ({ pageContext, data }) => {
   const { frontmatter } = data.markdownRemark;
@@ -21,6 +22,9 @@ const ComponentTemplates = ({ pageContext, data }) => {
 };
 
 export default ComponentTemplates;
+
+export const Head = ({data}) => <title>Radix-rhf - {data.markdownRemark.frontmatter.title}</title>;
+
 
 export const query = graphql`
   query ComponentTemplate($id: String) {
