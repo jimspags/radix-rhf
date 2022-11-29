@@ -22,10 +22,12 @@
     @apply p-2 mb-2 w-full text-foreground text-sm rounded hover:bg-primary font-semibold  hover:stroke-2 hover:stroke-stroke cursor-pointer;
   }
 
-
-
   h1 {
-    @apply font-bold text-2xl
+    @apply font-bold text-2xl;
+  }
+
+  h2 {
+    @apply font-bold text-sm;
   }
 }
 
@@ -40,3 +42,23 @@ body {
   background-color: var(--background);
 }
 
+code,
+code > * {
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace !important;
+}
+
+.gatsby-remark-prismjs-copy-button {
+  margin-right: 20px;
+}
+
+.gatsby-remark-prismjs-copy-button-container.copy-button {
+   transform: translateY(75%) !important;
+}
+.gatsby-highlight {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+pre.language-js, pre.language-ts {
+  margin: 0 !important;
+}
