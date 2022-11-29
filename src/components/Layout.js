@@ -4,7 +4,7 @@ import Sidebar from "./Sidebar";
 const Layout = ({ children }) => {
   return (
     <>
-      <main className="bg-highlight h-[200vh]">
+      <main className="bg-highlight h-full">
         <aside className="w-[300px] fixed">
           <Sidebar />
         </aside>
