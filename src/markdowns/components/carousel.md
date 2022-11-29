@@ -5,7 +5,7 @@ path: Carousel
 ---
 ## I﻿nstallation
 
-F﻿irst step, install the react slick carousel component using npm.
+F﻿irst step, install the react slick carousel component using npm.f
 
 ````
 ```js
