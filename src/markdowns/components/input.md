@@ -1,6 +1,7 @@
 ---
 title: Input
 path: input
+number: 4
 ---
 
 
@@ -14,7 +15,7 @@ npm install @radix-ui/react-label
 
 
 ## Create a reusable component
-Create reuable components in your shared components folder "/components/shared".
+Create reusable component in your shared components folder "/components/shared".
 
 ```js
 import * as Label from '@radix-ui/react-label';

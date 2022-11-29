@@ -1,6 +1,7 @@
 ---
 title: Radio
 path: radio
+number: 3
 ---
 
 ## Installation
@@ -64,16 +65,16 @@ Using the `Controller` from react hook form allows you to modify the `onChange` 
 
 ```js
 <Controller
-render={({ field: { onChange } }) => (
-    <RadioGroup.Root className="RadioGroupRoot" aria-label="Stackable" onValueChange={(e) => {
-        onChange(e)
-    }}>
-        <RadioButton label="On" value="on" />
-        <RadioButton label="Off" value="off" />
-    </RadioGroup.Root>
-)}
-name="stackable"
-control={control}
+    render={({ field: { onChange } }) => (
+        <RadioGroup.Root className="RadioGroupRoot" aria-label="Stackable" onValueChange={(e) => {
+            onChange(e)
+        }}>
+            <RadioButton label="On" value="on" />
+            <RadioButton label="Off" value="off" />
+        </RadioGroup.Root>
+    )}
+    name="stackable"
+    control={control}
 />
 ```
 

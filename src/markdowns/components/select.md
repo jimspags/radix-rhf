@@ -1,6 +1,7 @@
 ---
 title: Select
 path: select
+number: 2
 ---
 
 ## Installation
@@ -10,7 +11,7 @@ npm install @radix-ui/react-select
 ```
 
 ## Create a reusable component
-Create reuable components in your shared components folder "/components/shared".
+Create reusable component in your shared components folder "/components/shared".
 ```js
 import React from 'react';
 import * as Select from '@radix-ui/react-select';

@@ -13,6 +13,7 @@ const Sidebar = () => {
     query {
       components: allMarkdownRemark(
         filter: { fileAbsolutePath: { regex: "/(components)/" } }
+        sort: { frontmatter: { number: DESC } }
       ) {
         nodes {
           id
@@ -25,7 +26,7 @@ const Sidebar = () => {
     }
   `);
   const { nodes } = data.components;
- 
+
   return (
     <ScrollArea.Root className="ScrollAreaRoot">
       <ScrollArea.Viewport className="ScrollAreaViewport">
